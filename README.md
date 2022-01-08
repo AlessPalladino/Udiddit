@@ -5,7 +5,7 @@ Udiddit, a social news aggregation, web content rating, and discussion website, 
 The schema allows posts to be created by registered users on certain topics, and can include a URL or a text content. It also allows registered users to cast an upvote (like) or downvote (dislike) for any forum post that has been created. In addition to this, the schema also allows registered users to add comments on posts.
 
 Here is the DDL used to create the schema:
-'''sql
+
 CREATE TABLE bad_posts (
 	id SERIAL PRIMARY KEY,
 	topic VARCHAR(50),
@@ -16,7 +16,7 @@ CREATE TABLE bad_posts (
 	upvotes TEXT,
 	downvotes TEXT
 );
-'''
+
 CREATE TABLE bad_comments (
 	id SERIAL PRIMARY KEY,
 	username VARCHAR(50),
